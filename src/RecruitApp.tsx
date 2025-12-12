@@ -6,24 +6,21 @@ import { YieldCalculator } from './components/calculators/YieldCalculator';
 function CalcApp() {
   return (
     // <Provider> // Provider is mainly for <DevTools /> or advanced use cases like useStore
-    <div className="min-h-screen w-full bg-brand-purple flex flex-col items-center justify-start p-4 sm:p-8 space-y-6 sm:space-y-8">
-      <header className="my-6 sm:my-8">
-        <h1 className="text-4xl sm:text-5xl font-bold text-white text-center shadow-sm">
-          房产投资计算器
+    <div className="min-h-screen w-full bg-brand-purple flex flex-col items-center justify-start p-4 sm:p-8 sm:space-y-3">
+      <header className="">
+        <h1 className="text-2xl font-bold text-center">
+        租金回报计算器
         </h1>
-        <p className="text-center text-purple-100 mt-2">
-          轻松计算您的房产投资回报
-        </p>
       </header>
 
-      <main className="w-full flex flex-col items-center space-y-6 sm:space-y-8">
+      <main className="w-full flex flex-col items-center space-y-6">
         <PropertyCostCalculator />
         <RentalIncomeCalculator />
         <YieldCalculator />
       </main>
 
       <footer className="mt-auto py-4 text-center text-purple-200 text-sm">
-        © {new Date().getFullYear()} 房产计算小助手. All rights reserved.
+        © {new Date().getFullYear()} 租金回报计算器. All rights reserved.
       </footer>
     </div>
     // </Provider>
